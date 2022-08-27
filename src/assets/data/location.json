@@ -1,0 +1,58 @@
+[
+    {
+        "iata": "BOM",
+        "cityName": "Mumbai",
+        "airportName": "Chhatrapati Shivaji International Airport",
+        "country": "India",
+        "countryCode": "IN"
+    },
+    {
+        "iata": "DEL",
+        "cityName": "New Delhi",
+        "airportName": "Indira Gandhi International Airport",
+        "country": "India",
+        "countryCode": "IN"
+    },
+    {
+        "iata": "BLR",
+        "cityName": "Bengaluru",
+        "airportName": "Bengaluru International Airport",
+        "country": "India",
+        "countryCode": "IN"
+    },
+    {
+        "iata": "PNQ",
+        "cityName": "Pune",
+        "airportName": "Pune Airport",
+        "country": "India",
+        "countryCode": "IN"
+    },
+    {
+        "iata": "HYD",
+        "cityName": "Hyderabad",
+        "airportName": "Rajiv Gandhi International Airport",
+        "country": "India",
+        "countryCode": "IN"
+    },
+    {
+        "iata": "CCU",
+        "cityName": "Kolkata",
+        "airportName": "Netaji Subhash Chandra Bose International Airport",
+        "country": "India",
+        "countryCode": "IN"
+    },
+    {
+        "iata": "MAA",
+        "cityName": "Chennai",
+        "airportName": "Chennai International Airport",
+        "country": "India",
+        "countryCode": "IN"
+    },
+    {
+        "iata": "GOI",
+        "cityName": "Goa",
+        "airportName": "Dabolim Goa International Airport",
+        "country": "India",
+        "countryCode": "IN"
+    }
+]

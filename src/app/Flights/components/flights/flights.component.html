@@ -1,0 +1,85 @@
+<div class="container">
+    <form [formGroup]="flightForm" autocomplete="off" (ngSubmit)="onSearch(flightForm)" novalidate>
+        <div class="form-row">
+            <div class="form-col">
+                <fieldset>
+                    <legend>Departure</legend>
+                    <select id="depart" name="depart" class="input-elem" formControlName="departure">
+                        <ng-container *ngFor="let loc of locationData">
+                            <option
+                                *ngIf="flightForm.controls['departure']?.value === loc.iata || !isDepartSelected(loc.iata)"
+                                value="{{loc.iata}}">
+                                {{loc.iata}} - {{loc.cityName}}, {{loc.country}} ({{loc.airportName}})
+                            </option>
+                        </ng-container>
+                    </select>
+                </fieldset>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-col">
+                <fieldset>
+                    <legend>Destination</legend>
+                    <select id="destination" name="destination" class="input-elem" formControlName="destination">
+                        <ng-container *ngFor="let loc of locationData">
+                            <option
+                                *ngIf="flightForm.controls['destination']?.value === loc.iata || !isReturnSelected(loc.iata)"
+                                value="{{loc.iata}}">
+                                {{loc.iata}} - {{loc.cityName}}, {{loc.country}} ({{loc.airportName}})
+                            </option>
+                        </ng-container>
+                    </select>
+                </fieldset>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-col">
+                <fieldset>
+                    <legend>Depart Date</legend>
+                    <input class="input-elem" type="date" id="departDate" formControlName="departDate"
+                        min="{{departMinDate}}" name="departDate">
+                </fieldset>
+                <div class="error"
+                    *ngIf="flightForm.controls['departDate']?.invalid && (flightForm.controls['departDate']?.dirty || flightForm.controls['departDate']?.touched)">
+                    Required Field</div>
+            </div>
+            <div class="form-col">
+                <fieldset>
+                    <legend>Return Date</legend>
+                    <input class="input-elem" type="date" id="returnDate" formControlName="returnDate"
+                        min="{{returnMinDate}}" name="returnDate">
+                </fieldset>
+                <div class="error"
+                    *ngIf="flightForm.controls['returnDate']?.invalid && (flightForm.controls['returnDate']?.dirty || flightForm.controls['returnDate']?.touched)">
+                    Required Field</div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-col">
+                <fieldset>
+                    <legend>Travellers</legend>
+                    <select id="travellers" name="travellers" class="input-elem" formControlName="travellers">
+                        <option *ngFor="let val of travellerList" value="{{val}}">{{val}}</option>
+                    </select>
+                </fieldset>
+                <div class="error"
+                    *ngIf="flightForm.controls['travellers']?.invalid && (flightForm.controls['travellers']?.dirty || flightForm.controls['travellers']?.touched)">
+                    Required Field</div>
+            </div>
+            <div class="form-col">
+                <fieldset>
+                    <legend>Class</legend>
+                    <select id="class" name="class" class="input-elem" formControlName="class">
+                        <option *ngFor="let val of classList" value="{{val}}">{{val}}</option>
+                    </select>
+                </fieldset>
+                <div class="error"
+                    *ngIf="flightForm.controls['class']?.invalid && (flightForm.controls['class']?.dirty || flightForm.controls['class']?.touched)">
+                    Required Field</div>
+            </div>
+        </div>
+        <div class="form-row">
+            <button type="submit" class="btn-submit">Search flights</button>
+        </div>
+    </form>
+</div>

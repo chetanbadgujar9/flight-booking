@@ -1,0 +1,43 @@
+<div class="sort-body">
+    <form [formGroup]="sortForm" (ngSubmit)="onSortSubmit(sortForm)">
+        <div class="form-row">
+            <div class="form-col">
+                <input type="radio" id="price-low-high" formControlName="sortFlights" name="sortFlights" value="priceHtL">
+                <label for="price-low-high"> Price (Economy class : Lowest to Highest)</label>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-col">
+                <input type="radio" id="price-high-low" formControlName="sortFlights" name="sortFlights" value="priceLtH">
+                <label for="price-high-low"> Price (Economy class : Highest to Lowest)</label>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-col">
+                <input type="radio" id="duration-shortest-longest" formControlName="sortFlights" name="sortFlights" value="durationStL">
+                <label for="duration-shortest-longest"> Duration (Shortest to Longest)</label>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-col">
+                <input type="radio" id="duration-longest-shortest" formControlName="sortFlights" name="sortFlights" value="durationLtS">
+                <label for="duration-longest-shortest"> Duration (Longest to Shortest)</label>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-col">
+                <input type="radio" id="airline-a-z" formControlName="sortFlights" name="sortFlights" value="airlineAtZ">
+                <label for="airline-a-z"> Airline (A - Z) </label>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-col">
+                <input type="radio" id="airline-z-a" formControlName="sortFlights" name="sortFlights" value="airlineZtA">
+                <label for="airline-z-a"> Airline (Z - A) </label>
+            </div>
+        </div>
+        <div class="form-row">
+            <button type="submit" class="btn-submit">Done</button>
+        </div>
+    </form>
+</div>

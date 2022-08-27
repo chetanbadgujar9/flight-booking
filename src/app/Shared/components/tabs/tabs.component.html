@@ -1,0 +1,5 @@
+<ul>
+    <li *ngFor="let tab of tabData">
+        <a class="navbar-brand" routerLink="{{tab.url}}" routerLinkActive="active"><i class="{{tab.icon}}"></i> {{tab.tabName}}</a>
+    </li>
+</ul>

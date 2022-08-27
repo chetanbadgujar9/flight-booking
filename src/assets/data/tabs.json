@@ -1,0 +1,22 @@
+[
+    {
+        "tabName": "Flights",
+        "icon": "fa fa-plane",
+        "url": "/flights"
+    },
+    {
+        "tabName": "Hotels",
+        "icon": "fa fa-hotel",
+        "url": "/hotels"
+    },
+    {
+        "tabName": "Cars",
+        "icon": "fa fa-car",
+        "url": "/cars"
+    },
+    {
+        "tabName": "Activity",
+        "icon": "fa fa-flag",
+        "url": "/activities"
+    }
+]

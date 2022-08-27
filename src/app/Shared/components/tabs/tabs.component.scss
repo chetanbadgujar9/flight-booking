@@ -1,0 +1,36 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+
+    @media screen and (min-width: 992px) {
+        justify-content: center;
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+li {
+    float: left;
+    margin: 0 2px;
+    flex-grow: 4;
+}
+
+.active {
+    border-bottom: 1px solid #005aa1 !important;
+    color: #005aa1 !important;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: gray;
+    border-bottom: 1px solid lightgray;
+}

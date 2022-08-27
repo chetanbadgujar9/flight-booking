@@ -1,0 +1,29 @@
+<div class="filter-body">
+    <form [formGroup]="filterForm" (ngSubmit)="onFilterSubmit(filterForm)">
+        <div class="form-row">
+            <div class="form-col">
+                <h3>Price range </h3><small>(Economy class)</small>
+                <input class="input-elem" type="range" formControlName="priceRange" min="{{minRange}}" max="{{maxRange}}" >
+                <div class="range-values">
+                    <span>{{minRange | currency}}</span>
+                    <span>Value: {{filterForm.get('priceRange')?.value | currency}}</span>
+                    <span>{{maxRange | currency}}</span>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="form-row">
+            <div class="form-col" formArrayName="name">
+                <h3>Stops</h3>
+                <div class="check-div" *ngFor="let stop of stopNames.controls let i=index;">
+                    <input type="checkbox" [formControlName]="i"/> {{stopFilterData[i].name}}
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="btn-row">
+            <button type="button" class="reset-button" (click)="resetForm()">Reset All</button>
+            <button type="submit" class="apply-button">Apply</button>
+        </div>
+    </form>
+</div>

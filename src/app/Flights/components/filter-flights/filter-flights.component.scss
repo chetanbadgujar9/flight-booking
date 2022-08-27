@@ -1,0 +1,63 @@
+.filter-body {
+    padding: 15px;
+
+    @media screen and (min-width: 992px) {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .range-values {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    hr {
+        margin: 10px 0;
+    }
+
+    .check-div {
+        padding: 5px 0;
+    }
+
+    h3 {
+        margin: 2px 5px 10px 0px;
+        display: inline-block;
+    }
+
+    .btn-row {
+        position: fixed;
+        width: 100%;
+        text-align: center;
+        bottom: 30px;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        @media screen and (min-width: 992px) {
+            width: 50%;
+        }
+
+        .reset-button {
+            background-color: white;
+            color: #005aa1;
+            cursor: pointer;
+            border: 1px solid #005aa1;
+            padding: 15px;
+            border-radius: 5px;
+            width:50%;
+            font-size: 14px;
+        }
+
+        .apply-button {
+            background-color: #005aa1;
+            color: white;
+            cursor: pointer;
+            border: 1px solid #005aa1;
+            padding: 15px;
+            border-radius: 5px;
+            width:50%;
+            font-size: 14px;
+        }
+
+    }
+}

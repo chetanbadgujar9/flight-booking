@@ -1,0 +1,9 @@
+.hotels-body {
+    padding: 15px;
+
+    @media screen and (min-width: 992px) {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

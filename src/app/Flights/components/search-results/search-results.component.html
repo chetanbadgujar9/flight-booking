@@ -1,0 +1,109 @@
+<div class="search-result-container" *ngIf="!showSort && !showFilter">
+    <app-header>
+        <span class="icon-left"><i class="fa fa-arrow-left" (click)="gotoFlightsPage()"></i> </span>
+        <div class="header-text"> 
+            <h5>{{formData.departure}} <i class="fa fa-arrow-right"></i> {{formData.destination}}</h5>
+            <h6>{{formData.departDate | date:'MMM dd'}} - {{formData.returnDate | date:'MMM dd'}} | {{formData.travellers}} Travellers</h6>
+        </div>
+        <span class="icon-right"><i class="fa fa-pencil" (click)="gotoFlightsPage()"></i> </span>
+    </app-header>
+    <ng-container *ngIf="flightData?.length && !showDataNotFound && !showNoFilterData">
+        <div class="search-result" *ngFor="let flight of flightData">
+            <div class="search-logo">
+                <img title="{{flight?.airlineName}}" width="9%" src="{{flight?.logo}}"> <span> {{flight?.airlineName}} </span>
+            </div>
+            <div class="time-period">
+                <div class="depart-section">
+                    <div class="depart-time">{{flight?.departureTime}}</div>
+                    <div class="depart-location">{{flight?.departure}}</div>
+                </div>
+                <div class="middle-section">
+                    <div class="hours">{{flight?.totalTime}}</div>
+                    <div class="horizontal-stepper">
+                        <div class="stepper-dot"></div>
+                        <div class="stepper-horizontal-line"></div>
+                        <div class="stepper-dot"></div>
+                    </div>
+                    <div class="stop">{{showStops(flight.restStop)}}</div>
+                </div>
+                <div class="return-section">
+                    <div class="return-time">{{flight?.destinationTime}}</div>
+                    <div class="return-location">{{flight?.destination}}</div>
+                </div>
+            </div>
+            <div class="fare-section">
+                <div class="fare-box" *ngFor="let fare of flight?.prices">
+                    <div class="fare">
+                        <div>{{fare?.price | currency}}</div>
+                        <div [ngClass]="fare.seats ? 'seat-left' : 'seat-filled'">
+                            {{setFareBadge(fare.seats)}}
+                        </div>
+                    </div>
+                    <div class="class">
+                        {{fare.class}}
+                    </div>
+                </div>
+            </div>
+            <div class="gray-line"></div>
+        </div>
+    </ng-container>
+    <ng-container *ngIf="!flightData?.length && !showDataNotFound && !showNoFilterData">
+        <div class="search-result" *ngFor="let item of generateFakeSkeleton(3)">
+            <div class="search-logo">
+                <ngx-skeleton-loader [theme]="{ height: '20px',width: '100px'}"></ngx-skeleton-loader>
+            </div>
+            <div class="time-period">
+                <div class="hours"><ngx-skeleton-loader  [theme]="{ height: '50px',width: '100px'}"></ngx-skeleton-loader></div>
+                    <div class="horizontal-stepper">
+                        <ngx-skeleton-loader [theme]="{ height: '50px',width: '100px'}"></ngx-skeleton-loader>
+                    </div>
+                    <div class="stop"><ngx-skeleton-loader [theme]="{ height: '50px',width: '100px'}"></ngx-skeleton-loader></div>
+            </div>
+            <div class="fare-section">
+                <div *ngFor="let item of generateFakeSkeleton(3)">
+                    <ngx-skeleton-loader [theme]="{ height: '100px', width: '100px'}"></ngx-skeleton-loader>
+                </div>
+            </div>
+            <div class="gray-line"></div>
+        </div>
+    </ng-container>
+
+    <div class="no-flight" *ngIf="!flightData?.length && showDataNotFound">
+        <h3>Opps...!! No flights found</h3>
+        <h6><mark>To test the app, Please search the flights for 10th Sept (BOM - DEL)</mark></h6>
+        <button class="edit-search" (click)="gotoFlightsPage()">Edit Search</button>
+    </div>
+
+    <div class="no-flight" *ngIf="showNoFilterData">
+        <h5>Sorry! No flights matching your search.</h5>
+        <h5>Please modify filters and try again</h5>
+        <button class="edit-search" (click)="onFilter()">Modify Filter</button>
+    </div>
+
+    <div class="sort-filter" *ngIf="flightData.length">
+        <button class="sort btn-group" (click)="onSort()">Sort By</button>
+        <button class="filter btn-group" (click)="onFilter()">Filters</button>
+    </div>
+</div>
+<div id="openModal" class="modalDialog" *ngIf="showSort || showFilter">
+    <div *ngIf="showSort">
+        <app-header>
+            <span class="icon-left"><i class="fa fa-arrow-left" (click)="onSortBack()"></i> </span>
+            <div class="header-text"> 
+                Sort by
+            </div>
+        </app-header>
+        <app-sort-flights (onSort)="sortData()"></app-sort-flights>
+    </div>
+
+    <div *ngIf="showFilter">
+        <app-header>
+            <span class="icon-left"><i class="fa fa-arrow-left" (click)="onFilterBack()"></i> </span>
+            <div class="header-text"> 
+                Filter by
+            </div>
+        </app-header>
+        <app-filter-flights [minRange]="minRange" [maxRange]="maxRange" [stopFilterData]="stopFilterData" (onFilter)="filterData()" ></app-filter-flights>
+    </div>
+</div>
+

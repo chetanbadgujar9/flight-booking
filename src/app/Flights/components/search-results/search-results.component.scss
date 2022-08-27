@@ -1,0 +1,188 @@
+.search-result-container {
+    .search-result {
+        padding: 15px;
+
+        @media screen and (min-width: 992px) {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .search-logo {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+    }
+
+    .time-period {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+
+        .depart-time, .return-time {
+            font-weight: 700;
+        }
+
+        .depart-location, .return-location {
+            font-size: 12px;
+        }
+
+        .middle-section {
+            width: 35%;
+        
+
+            .hours, .stop {
+                font-size: 12px;
+                text-align: center;
+                margin-bottom: 5px;
+            }
+
+            .horizontal-stepper {
+                white-space: nowrap;
+                display: flex;
+                align-items: center;
+            }
+
+            .stepper-dot {
+                border-radius: 50%;
+                height: 10px;
+                width: 10px;
+                flex-shrink: 0;
+                position: relative;
+                flex: none;
+                background-color: green;
+            }
+
+            .stepper-horizontal-line {
+                border-top-width: 2px;
+                border-top-style: solid;
+                flex: auto;
+                height: 0;
+                margin: 0 0px;
+                min-width: 32px;
+                border-top-color: green;
+            }
+        }
+    }
+
+    .fare-section{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        column-gap: 10px;
+
+        .fare-box {
+            background-color: #005aa1;
+            color: white;
+            padding: 15px;
+            min-width: 20%;
+            border-radius: 5px;
+            flex: 1 1 0%;
+
+            .fare {
+
+                .seat-left {
+                    font-size: 12px;
+                    background-color: green;
+                    color: white;
+                    padding: 3px;
+                    border-radius: 3px;
+                    position: relative;
+                    top: -47px;
+                    left: 8px;
+                    width: fit-content;
+                    float: right;
+                }
+
+                .seat-filled {
+                    font-size: 12px;
+                    background-color: #c1a117;
+                    color: black;
+                    padding: 3px;
+                    border-radius: 3px;
+                    position: relative;
+                    top: -47px;
+                    left: 8px;
+                    width: fit-content;
+                    float: right;
+                }
+            }
+
+            .class {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .gray-line {
+        background-color: #d3d3d391;
+        height: 5px;
+        padding: 0px;
+    }
+
+    .no-flight {
+        text-align: center;
+        padding: 10px;
+        line-height: 2rem;
+
+        .edit-search {
+            background-color: green;
+            color: white;
+            cursor: pointer;
+            border: none;
+            padding: 8px;
+            border-radius: 5px;
+        }
+    }
+
+    .sort-filter {
+        position: fixed;
+        bottom: 30px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        box-shadow: 0px 1px 14px 5px #888888;
+        width: 70%;
+        font-size: 14px;
+        font-weight: 700;
+
+        @media screen and (min-width: 992px) {
+            width: 30%;
+        }
+
+        
+        .btn-group {
+            padding: 15px;
+            background-color: white;
+            border-radius: 5px;
+            color: #005aa1;
+            width: 50%;
+        }
+
+        .filter {
+            border: none;
+            border-left: 1px solid;
+        }
+
+        .sort {
+            border: none;
+        }
+    }
+}
+
+.modalDialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99999;
+    opacity:1;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+}
+
+.modalDialog > div {
+    position: relative;
+    background: white;
+}

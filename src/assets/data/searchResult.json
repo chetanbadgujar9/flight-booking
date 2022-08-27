@@ -1,0 +1,347 @@
+[
+    {
+        "airlineName" : "Air India",
+        "departure": "BOM",
+        "destination": "DEL",
+        "departuredDate": "2022-09-10",
+        "departureTime": "2:30 am",
+        "destinationDate": "2022-09-10",
+        "destinationTime": "04:50 am",
+        "totalTime": "2h 40m",
+        "restStop": 1,
+        "logo": "assets/airline-logo/AI.png",
+        "prices": [{
+            "class": "Economy",
+            "price": 215,
+            "seats": 3
+        },
+        {
+            "class": "Basic",
+            "price": 345,
+            "seats": 0
+        },
+        {
+            "class": "Main",
+            "price": 440,
+            "seats": 6
+        }]
+    },
+    {
+        "airlineName" : "Go First",
+        "departure": "BOM",
+        "destination": "DEL",
+        "departuredDate": "2022-09-10",
+        "departureTime": "7:00 pm",
+        "destinationDate": "2022-09-10",
+        "destinationTime": "1:50 am",
+        "totalTime": "6h 50m",
+        "restStop": 1,
+        "logo": "assets/airline-logo/GF.png",
+        "prices": [{
+            "class": "Economy",
+            "price": 409,
+            "seats": 3
+        },
+        {
+            "class": "Basic",
+            "price": 305,
+            "seats": 8
+        },
+        {
+            "class": "Main",
+            "price": 840,
+            "seats": 3
+        }]
+    },{
+        "airlineName" : "SpiceJet",
+        "departure": "BOM",
+        "destination": "DEL",
+        "departuredDate": "2022-09-10",
+        "departureTime": "1:30 pm",
+        "destinationDate": "2022-09-10",
+        "destinationTime": "11:50 pm",
+        "totalTime": "10h 20m",
+        "restStop": 2,
+        "logo": "assets/airline-logo/SG.png",
+        "prices": [{
+            "class": "Economy",
+            "price": 111,
+            "seats": 3
+        },
+        {
+            "class": "Basic",
+            "price": 324,
+            "seats": 4
+        },
+        {
+            "class": "Main",
+            "price": 654,
+            "seats": 6
+        }]
+    },{
+        "airlineName" : "Indigo",
+        "departure": "BOM",
+        "destination": "DEL",
+        "departuredDate": "2022-09-10",
+        "departureTime": "6:50 pm",
+        "destinationDate": "2022-09-10",
+        "destinationTime": "11:50 pm",
+        "totalTime": "5h 00m",
+        "restStop": 0,
+        "logo": "assets/airline-logo/IN.png",
+        "prices": [{
+            "class": "Economy",
+            "price": 555,
+            "seats": 0
+        },
+        {
+            "class": "Basic",
+            "price": 785,
+            "seats": 0
+        },
+        {
+            "class": "Main",
+            "price": 777,
+            "seats": 0
+        }]
+    },{
+        "airlineName" : "Air India",
+        "departure": "BOM",
+        "destination": "DEL",
+        "departuredDate": "2022-09-10",
+        "departureTime": "4:30 pm",
+        "destinationDate": "2022-09-10",
+        "destinationTime": "6:00 pm",
+        "totalTime": "2h 30m",
+        "restStop": 0,
+        "logo": "assets/airline-logo/AI.png",
+        "prices": [{
+            "class": "Economy",
+            "price": 515,
+            "seats": 3
+        },
+        {
+            "class": "Basic",
+            "price": 745,
+            "seats": 0
+        },
+        {
+            "class": "Main",
+            "price": 940,
+            "seats": 6
+        }]
+    },{
+        "airlineName" : "Vistara",
+        "departure": "BOM",
+        "destination": "DEL",
+        "departuredDate": "2022-09-10",
+        "departureTime": "12:30 am",
+        "destinationDate": "2022-09-10",
+        "destinationTime": "04:50 am",
+        "totalTime": "4h 40m",
+        "restStop": 2,
+        "logo": "assets/airline-logo/UK.png",
+        "prices": [{
+            "class": "Economy",
+            "price": 615,
+            "seats": 0
+        },
+        {
+            "class": "Basic",
+            "price": 745,
+            "seats": 0
+        },
+        {
+            "class": "Main",
+            "price": 840,
+            "seats": 2
+        }]
+    },
+    {
+        "airlineName" : "SpiceJet",
+        "departure": "BOM",
+        "destination": "DEL",
+        "departuredDate": "2022-09-10",
+        "departureTime": "12:30 pm",
+        "destinationDate": "2022-09-10",
+        "destinationTime": "6:30 pm",
+        "totalTime": "6h 30m",
+        "restStop": 0,
+        "logo": "assets/airline-logo/SG.png",
+        "prices": [{
+            "class": "Economy",
+            "price": 112,
+            "seats": 0
+        },
+        {
+            "class": "Basic",
+            "price": 215,
+            "seats": 4
+        },
+        {
+            "class": "Main",
+            "price": 540,
+            "seats": 1
+        }]
+    },
+    {
+        "airlineName" : "Go First",
+        "departure": "BOM",
+        "destination": "DEL",
+        "departuredDate": "2022-09-10",
+        "departureTime": "3:00 am",
+        "destinationDate": "2022-09-10",
+        "destinationTime": "8:00 am",
+        "totalTime": "5h 00m",
+        "restStop": 1,
+        "logo": "assets/airline-logo/GF.png",
+        "prices": [{
+            "class": "Economy",
+            "price": 222,
+            "seats": 3
+        },
+        {
+            "class": "Basic",
+            "price": 330,
+            "seats": 5
+        },
+        {
+            "class": "Main",
+            "price": 570,
+            "seats": 0
+        }]
+    },
+    {
+        "airlineName" : "Vistara",
+        "departure": "BOM",
+        "destination": "DEL",
+        "departuredDate": "2022-09-10",
+        "departureTime": "7:00 am",
+        "destinationDate": "2022-09-10",
+        "destinationTime": "8:00 am",
+        "totalTime": "1h 00m",
+        "restStop": 0,
+        "logo": "assets/airline-logo/UK.png",
+        "prices": [{
+            "class": "Economy",
+            "price": 230,
+            "seats": 0
+        },
+        {
+            "class": "Basic",
+            "price": 453,
+            "seats": 5
+        },
+        {
+            "class": "Main",
+            "price": 543,
+            "seats": 0
+        }]
+    },
+    {
+        "airlineName" : "Indigo",
+        "departure": "BOM",
+        "destination": "DEL",
+        "departuredDate": "2022-09-10",
+        "departureTime": "5:30 am",
+        "destinationDate": "2022-09-10",
+        "destinationTime": "8:00 am",
+        "totalTime": "4h 30m",
+        "restStop": 1,
+        "logo": "assets/airline-logo/IN.png",
+        "prices": [{
+            "class": "Economy",
+            "price": 330,
+            "seats": 0
+        },
+        {
+            "class": "Basic",
+            "price": 456,
+            "seats": 5
+        },
+        {
+            "class": "Main",
+            "price": 654,
+            "seats": 9
+        }]
+    },{
+        "airlineName" : "Vistara",
+        "departure": "BOM",
+        "destination": "DEL",
+        "departuredDate": "2022-09-10",
+        "departureTime": "5:20 am",
+        "destinationDate": "2022-09-10",
+        "destinationTime": "8:00 am",
+        "totalTime": "4h 40m",
+        "restStop": 1,
+        "logo": "assets/airline-logo/UK.png",
+        "prices": [{
+            "class": "Economy",
+            "price": 420,
+            "seats": 8
+        },
+        {
+            "class": "Basic",
+            "price": 486,
+            "seats": 1
+        },
+        {
+            "class": "Main",
+            "price": 694,
+            "seats": 7
+        }]
+    },{
+        "airlineName" : "Air India",
+        "departure": "BOM",
+        "destination": "DEL",
+        "departuredDate": "2022-09-11",
+        "departureTime": "2:30 am",
+        "destinationDate": "2022-09-11",
+        "destinationTime": "04:50 am",
+        "totalTime": "2h 40m",
+        "restStop": 1,
+        "logo": "assets/airline-logo/AI.png",
+        "prices": [{
+            "class": "Economy",
+            "price": 215,
+            "seats": 3
+        },
+        {
+            "class": "Basic",
+            "price": 345,
+            "seats": 0
+        },
+        {
+            "class": "Main",
+            "price": 440,
+            "seats": 6
+        }]
+    },
+    {
+        "airlineName" : "SpiceJet",
+        "departure": "BOM",
+        "destination": "DEL",
+        "departuredDate": "2022-09-11",
+        "departureTime": "12:30 pm",
+        "destinationDate": "2022-09-11",
+        "destinationTime": "6:30 pm",
+        "totalTime": "6h 30m",
+        "restStop": 2,
+        "logo": "assets/airline-logo/SG.png",
+        "prices": [{
+            "class": "Economy",
+            "price": 112,
+            "seats": 0
+        },
+        {
+            "class": "Basic",
+            "price": 215,
+            "seats": 4
+        },
+        {
+            "class": "Main",
+            "price": 540,
+            "seats": 1
+        }]
+    }
+]
