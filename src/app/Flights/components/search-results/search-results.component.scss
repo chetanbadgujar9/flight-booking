@@ -17,7 +17,7 @@
     .time-period {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 25px;
+        margin-bottom: 30px;
 
         .depart-time, .return-time {
             font-weight: 700;
@@ -85,10 +85,10 @@
                     font-size: 12px;
                     background-color: green;
                     color: white;
-                    padding: 3px;
+                    padding: 5px;
                     border-radius: 3px;
                     position: relative;
-                    top: -47px;
+                    top: -50px;
                     left: 8px;
                     width: fit-content;
                     float: right;
@@ -98,10 +98,10 @@
                     font-size: 12px;
                     background-color: #c1a117;
                     color: black;
-                    padding: 3px;
+                    padding: 5px;
                     border-radius: 3px;
                     position: relative;
-                    top: -47px;
+                    top: -50px;
                     left: 8px;
                     width: fit-content;
                     float: right;
@@ -109,7 +109,7 @@
             }
 
             .class {
-                font-size: 12px;
+                font-size: 14px;
             }
         }
     }
@@ -156,6 +156,7 @@
             border-radius: 5px;
             color: #005aa1;
             width: 50%;
+            font-size: 16px;
         }
 
         .filter {
