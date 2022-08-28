@@ -11,7 +11,7 @@ import { tabDataI, TabService } from './Core';
 export class AppComponent implements OnInit {
   public tabData: tabDataI[] = [];
   public showHeader = true;
-  routingUrls = ['', '/flights', '/cars', '/hotels', '/activities'];
+  routingUrls = ['/', '/flights', '/cars', '/hotels', '/activities'];
 
   constructor(private tabService: TabService, private router: Router) { }
 

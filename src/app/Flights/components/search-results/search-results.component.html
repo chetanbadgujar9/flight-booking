@@ -1,7 +1,7 @@
 <div class="search-result-container" *ngIf="!showSort && !showFilter">
     <app-header>
         <span class="icon-left"><i class="fa fa-arrow-left" (click)="gotoFlightsPage()"></i> </span>
-        <div class="header-text"> 
+        <div class="header-text" *ngIf="formData?.departure"> 
             <h5>{{formData.departure}} <i class="fa fa-arrow-right"></i> {{formData.destination}}</h5>
             <h6>{{formData.departDate | date:'MMM dd'}} - {{formData.returnDate | date:'MMM dd'}} | {{formData.travellers}} Travellers</h6>
         </div>
