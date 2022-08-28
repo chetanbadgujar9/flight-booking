@@ -59,8 +59,8 @@
         "departuredDate": "2022-09-10",
         "departureTime": "1:30 pm",
         "destinationDate": "2022-09-10",
-        "destinationTime": "11:50 pm",
-        "totalTime": "10h 20m",
+        "destinationTime": "10:50 pm",
+        "totalTime": "9h 20m",
         "restStop": 2,
         "logo": "assets/airline-logo/SG.png",
         "prices": [{
